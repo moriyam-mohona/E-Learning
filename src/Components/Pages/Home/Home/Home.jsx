@@ -4,7 +4,7 @@ import CourseCard from "../CourseCard/Coursecard";
 
 const Home = () => {
   return (
-    <div className="space-y-10">
+    <div className="space-y-10 mt-5">
       <Banner />
       <CategoryButtons />
       <CourseCard />

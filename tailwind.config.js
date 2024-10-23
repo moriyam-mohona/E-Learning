@@ -9,7 +9,9 @@ export default {
         },
         gray: {
           300: "#D1D5DB", // লাইট গ্রে
+          50: "#F9FAFB", // লাইট গ্রে
         },
+
         black: "#292929", // ডার্ক ব্ল্যাক
         white: "#FFFFFF",
         DEFAULT: "#FF6347",

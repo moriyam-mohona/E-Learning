@@ -12,7 +12,15 @@ const Navbar = () => {
 
   const handleClick = () => setNav(!nav);
 
-  const navItems = ["Categories", "Others", "blog", "blog", "blog", "blog"];
+  const navItems = [
+    "Home",
+    "Categories",
+    "Others",
+    "blog",
+    "blog",
+    "blog",
+    "blog",
+  ];
 
   const categoriesSubItems = ["Design", "Programming", "Development"];
   const othersSubItems = ["Design", "Programming", "Development"];

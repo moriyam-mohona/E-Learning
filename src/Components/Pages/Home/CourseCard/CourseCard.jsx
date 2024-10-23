@@ -1,59 +1,7 @@
 import { useNavigate } from "react-router-dom";
+import courseData from "../../../../assets/CourseData";
 
 const CourseCard = () => {
-  const courseData = [
-    {
-      id: 1,
-      title: "বিসিএস",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      price: 800,
-      discount: 100,
-      currentPrice: 700,
-      offer: "20% off",
-      image: "https://i.ibb.co/hg8BYHG/1.jpg",
-    },
-    {
-      id: 2,
-      title: "NTRC",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      price: 1000,
-      discount: 200,
-      currentPrice: 800,
-      offer: "20% off",
-      image: "https://i.ibb.co/xfKSDxb/2.jpg",
-    },
-    {
-      id: 3,
-      title: "আইনজীবী সনদ",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      price: 1000,
-      discount: 200,
-      currentPrice: 800,
-      offer: "20% off",
-      image: "https://i.ibb.co/vD6BVp3/3.jpg",
-    },
-    {
-      id: 4,
-      title: "ভার্সিটি এডমিশন",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      price: 1000,
-      discount: 200,
-      currentPrice: 800,
-      offer: "20% off",
-      image: "https://i.ibb.co/M6X2yxc/4.jpg",
-    },
-    {
-      id: 5,
-      title: "নার্সিং",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      price: 1000,
-      discount: 200,
-      currentPrice: 800,
-      offer: "20% off",
-      image: "https://i.ibb.co/d6Nz8GX/5.jpg",
-    },
-  ];
-
   const navigate = useNavigate();
 
   const truncateText = (text) => {
@@ -69,7 +17,7 @@ const CourseCard = () => {
       {courseData.map((course) => (
         <div
           key={course.id}
-          className="col-span-12 lg:col-span-4 border shadow-md p-3 rounded-2xl space-y-3 text-black transform transition-all hover:scale-95"
+          className="col-span-12 lg:col-span-4 border shadow-md p-5 rounded-2xl space-y-3 text-black transform transition-all hover:scale-95"
         >
           <img
             src={course.image}
@@ -88,7 +36,6 @@ const CourseCard = () => {
               </button>
             </p>
             <hr />
-
             <div className="flex justify-between items-center">
               <div className="flex gap-3">
                 <p>{course.price}</p>
