@@ -14,9 +14,8 @@ const CourseDetails = () => {
   };
 
   const truncatedDescription =
-    course.description.split(" ").slice(0, 30).join(" ") + "..."; // Get first 10 words
+    course.description.split(" ").slice(0, 30).join(" ") + "...";
 
-  // Dummy lesson data
   const lessons = [
     {
       id: 1,

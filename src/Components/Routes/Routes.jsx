@@ -17,7 +17,6 @@ export const router = createBrowserRouter([
         path: "/course-details/:id",
         element: <CourseDetails />,
       },
-      // <Route path="/course-details/:id" element={<CourseDetails />} />,
     ],
   },
 ]);
