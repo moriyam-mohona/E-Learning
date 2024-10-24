@@ -1,6 +1,6 @@
 import Banner from "../Banner/Banner";
 import CategoryButtons from "../CategoryButtons/CategoryButtons";
-import CourseCard from "../CourseCard/Coursecard";
+import CourseCard from "../CourseCard/CourseCard";
 
 const Home = () => {
   return (

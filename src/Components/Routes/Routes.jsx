@@ -3,18 +3,23 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Main from "../Pages/Main/Main";
 import Home from "../Pages/Home/Home/Home";
 import CourseDetails from "../Pages/Home/CourseCard/CourseDetails";
+import Blog from "../Pages/Blog/Blog";
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
-    errorElement: <ErrorPage />, // Fallback for errors
+    errorElement: <ErrorPage />,
     children: [
       {
-        path: "", // This will match the root URL
+        path: "/",
         element: <Home />,
       },
       {
-        path: "course-details/:id", // Ensure paths are relative
+        path: "/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/course-details/:id",
         element: <CourseDetails />,
       },
     ],
