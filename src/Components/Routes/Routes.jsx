@@ -7,14 +7,14 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
-    errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />, // Fallback for errors
     children: [
       {
-        path: "/",
+        path: "", // This will match the root URL
         element: <Home />,
       },
       {
-        path: "/course-details/:id",
+        path: "course-details/:id", // Ensure paths are relative
         element: <CourseDetails />,
       },
     ],

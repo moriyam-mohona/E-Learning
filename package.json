@@ -1,8 +1,8 @@
 {
-  "homepage": "https://moriyam-mohona.github.io/E-Learning/",
   "name": "course-management-siam",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://moriyam-mohona.github.io/E-Learning/",
   "type": "module",
   "scripts": {
     "build": "vite build",
